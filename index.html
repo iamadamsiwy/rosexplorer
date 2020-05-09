@@ -36,33 +36,35 @@
             // url : 'ws://localhost:9090'
             // });
 
-            let ros = null
+            // let ros = null
 
-            // Initialize the teleop.
-            var teleop = new KEYBOARDTELEOP.Teleop({
-            ros : ros,
-            topic : '/base_controller/command'
-            });
-
-            // // Create a UI slider using JQuery UI.
-            // $('#speed-slider').slider({
-            // range : 'min',
-            // min : 0,
-            // max : 100,
-            // value : 90,
-            // slide : function(event, ui) {
-            //     // Change the speed label.
-            //     $('#speed-label').html('Speed: ' + ui.value + '%');
-            //     // Scale the speed.
-            //     teleop.scale = (ui.value / 100.0);
-            // }
+            // // Initialize the teleop.
+            // var teleop = new KEYBOARDTELEOP.Teleop({
+            // ros : ros,
+            // topic : '/base_controller/command'
             // });
 
-            teleop.scale = 1;
+            // // // Create a UI slider using JQuery UI.
+            // // $('#speed-slider').slider({
+            // // range : 'min',
+            // // min : 0,
+            // // max : 100,
+            // // value : 90,
+            // // slide : function(event, ui) {
+            // //     // Change the speed label.
+            // //     $('#speed-label').html('Speed: ' + ui.value + '%');
+            // //     // Scale the speed.
+            // //     teleop.scale = (ui.value / 100.0);
+            // // }
+            // // });
+
+            // teleop.scale = 1;
 
             // // Set the initial speed .
             // $('#speed-label').html('Speed: ' + ($('#speed-slider').slider('value')) + '%');
             // teleop.scale = ($('#speed-slider').slider('value') / 100.0);
+
+            // client.publish('eins', 'direktpublish');
         }
         </script>
 
@@ -75,13 +77,13 @@
                         <nav class="pull">
                             <ul class="top-nav">
                                 <li>
-                                    <a href="#">Wissensaustausch in Arbeit<span class="indicator"><i class="fa fa-angle-right"></i></span></a>
+                                    <a href="#">Das ROSExplorer MeetUp<span class="indicator"><i class="fa fa-angle-right"></i></span></a>
                                 </li>
                                 <li>
-                                    <a href="#">Projektfortschritt in Arbeit<span class="indicator"><i class="fa fa-angle-right"></i></span></a>
+                                    <a href="#">Kickstart Tutorial Videos<span class="indicator"><i class="fa fa-angle-right"></i></span></a>
                                 </li>
                                 <li>
-                                    <a href="#">Tutorials in Arbeit<span class="indicator"><i class="fa fa-angle-right"></i></span></a>
+                                    <a href="#">...<span class="indicator"><i class="fa fa-angle-right"></i></span></a>
                                 </li>
                             </ul>
                         </nav>
@@ -127,14 +129,156 @@
                     </div>
                 </div>
             </section>
+
+
+
+            <section>
+                <div class="container">
+                    <br />
+                    <h2>Kickstart in 9 Videos 9 x 30min</h2>
+                    <p class="lead text-danger">In 9 x 30 Minuten vom Grundsetup bis zum ersten ROS Kinetic Roboter auf deinem Raspberry Pi 4 </p>
+                </div>
+                    <img src="images/kickstart_roadmap.png" width="100%" alt="9 Videos zunächst Software und dann Hardware" />
+                    <div class="container">
+                <!-- <kbd><kbd>ctrl</kbd> + <kbd>,</kbd></kbd> -->
+                <div class="row">
+                    <div class="col-sm-4">   
+                    <div class="card">
+                        <span class="badge badge-pill badge-success">Neu</span>
+                        <iframe width="100%" src="https://www.youtube-nocookie.com/embed/njwFMFX8Fq8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <h5 class="card-title">ROS Kinetic Grundinstallation auf RPi4</h5>
+                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                        <a href="#" class="btn btn-primary">Tutorial Cheat Sheet</a>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="col-sm-4">    
+                    <div class="card">
+                        <span class="badge badge-pill badge-success">Neu</span>
+                        <iframe width="100%" src="https://www.youtube-nocookie.com/embed/nou-jH9OJeU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <h5 class="card-title">ROS Basisbefehle rosnode, rostopic und rosrun</h5>
+                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                        <a href="#" class="btn btn-primary">Tutorial Cheat Sheet</a>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="col-sm-4">    
+                    <div class="card">
+                        <span class="badge badge-pill badge-success">Neu</span>
+                        
+                        <iframe width="100%" src="https://www.youtube-nocookie.com/embed/auHU2xmmXRE?showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <h5 class="card-title">Dein erster Publisher und Subscriber in Python</h5>
+                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                        <a href="#" class="btn btn-primary">Tutorial Cheat Sheet</a>
+                        </div>
+                    </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-4">   
+                    <div class="card">
+                        <span class="badge badge-pill badge-success">Neu</span>
+                        <iframe width="100%" src="https://www.youtube-nocookie.com/embed/DvdtaAkR7nc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <h5 class="card-title">Catkin CLI für dein Projektsetup</h5>
+                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                        <a href="#" class="btn btn-primary">Tutorial Cheat Sheet</a>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="col-sm-4">    
+                    <div class="card">
+                        <span class="badge badge-pill badge-success">Neu</span>
+                        <iframe width="100%" src="https://www.youtube-nocookie.com/embed/RP4rfYb2A68" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <h5 class="card-title">ROSifizieren Best Practice</h5>
+                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                        <a href="#" class="btn btn-primary">Tutorial Cheat Sheet</a>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="col-sm-4">    
+                    <div class="card">
+                        <span class="badge badge-pill badge-success">Coming Soon</span>
+                        
+                                                <img src="images/teaser_6.png" width="100%" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <h5 class="card-title">Ultraschall Sensor direkt am GPIO anschließen <span class="badge badge-info">Hardware</span></h5>
+                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                        <a href="#" class="btn btn-primary">Tutorial Cheat Sheet</a>
+                        </div>
+                    </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-4">    
+                        <div class="card">
+                            <span class="badge badge-pill badge-success">Coming Soon</span>
+                            
+                                                    <img src="images/teaser_7.png" width="100%" class="card-img-top" alt="...">
+                            <div class="card-body">
+                            <h5 class="card-title">ROSSerial Arduino Board <span class="badge badge-info">Hardware</span></h5>
+                            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                            <a href="#" class="btn btn-primary">Tutorial Cheat Sheet</a>
+                            </div>
+                        </div>
+                    </div>
+                                            <div class="col-sm-4">    
+                    <div class="card">
+                        <span class="badge badge-pill badge-success">Coming Soon</span>
+                        
+                                                <img src="images/teaser_8.png" width="100%" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <h5 class="card-title">Localization als Basis für Navigation <span class="badge badge-pill badge-info">Hardware</span></h5>
+                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                        <a href="#" class="btn btn-primary">Tutorial Cheat Sheet</a>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-sm-4">    
+                        <div class="card">
+                            <span class="badge badge-pill badge-success">Coming Soon</span>
+                            
+                                                    <img src="images/teaser_9.png" width="100%" class="card-img-top" alt="...">
+                            <div class="card-body">
+                            <h5 class="card-title">Starte deinen eigenen Explorer Bot <span class="badge badge-info">Hardware</span></h5>
+                            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                            <a href="#" class="btn btn-primary">Tutorial Cheat Sheet</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                </div>
+
+                
+            </section>
             <section class="content-block-nopad bg-deepocean footer-wrap-1-1">
                 <div class="container footer-1-1">
                     <div class="row">
                         <div class="col-sm-5">
-                            <h3><i>Wir&nbsp;</i>&nbsp;wollen Roboter bauen</h3>
-                            <p class="lead">Wir wollen Smarte Köpfe vernetzen, die ROS als Plattform für Ihre 
+                            <h3><i>Wir&nbsp;</i>&nbsp; bauen Roboter</h3>
+                            <p class="lead">Wir vernetzen Smarte Köpfe, die ROS als Plattform für Ihre 
 Robotik-Projekte nutzen möchten. Von der Idee, über die Simulation bis 
-hin zur Real-World-Anwendung. Von A, wie autonomes fahren bis zum Z in 
+hin zur Real-World-Anwendung. Von A, wie autonomes Fahren bis zum Z in 
 GaZbo ;-)<br>&nbsp;Fahrend, Schwebend oder Schwimmend - alles willkommen!</p>
                         </div>
                         <div class="col-sm-6 col-sm-offset-1">
@@ -184,14 +328,13 @@ GaZbo ;-)<br>&nbsp;Fahrend, Schwebend oder Schwimmend - alles willkommen!</p>
                                     <h4>Wissens<br></h4>
                                     <ul>
                                         <li>
-                                            <a href="#">Robotik</a>
+                                            <a href="#">Kikstart Video Tutorial</a>
                                         </li>
                                         <li>
                                             <a href="#">ROS Framework</a>
                                         </li>
                                         <li>
                                             <a href="#">Projekte</a>
-                                            <a href="#"></a>
                                         </li>
                                     </ul>
                                 </div>
@@ -220,9 +363,9 @@ GaZbo ;-)<br>&nbsp;Fahrend, Schwebend oder Schwimmend - alles willkommen!</p>
         <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>         
         <script type="text/javascript" src="js/bootstrap.min.js"></script>         
         <script type="text/javascript" src="js/plugins.js"></script>
-        <script type="text/javascript" src="js/keyboardteleop.js"></script>
+        <!-- <script type="text/javascript" src="js/keyboardteleop.js"></script> -->
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.min.js"></script>
-        <script type="text/javascript" src="js/browserify_mqtt.js"></script>
+        <script type="text/javascript" src="js/browserify3_mqtt.js"></script>
         
         
         <!-- <script src="https://maps.google.com/maps/api/js?sensor=true"></script> -->
@@ -230,6 +373,8 @@ GaZbo ;-)<br>&nbsp;Fahrend, Schwebend oder Schwimmend - alles willkommen!</p>
 
         <script>
             // MQTTconnect();
+
+           
         </script>
     </body>     
 </html>
